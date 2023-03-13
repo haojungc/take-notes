@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "TakeNotes",
+  "version": "1.0",
+
+  "description": "Pops up a note taking panel when a Youtube video ends",
+
+  "icons": {
+    "64": "icons/icon-64.png",
+    "128": "icons/icon-128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["takenotes.js"]
+    }
+  ]
+
+}
+
